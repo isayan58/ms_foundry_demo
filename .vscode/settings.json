@@ -1,0 +1,7 @@
+{
+  "python.defaultInterpreterPath": "/Users/sayanadhikary/.venvs/ms_foundry_demo/bin/python",
+  "python.terminal.activateEnvironment": true,
+  "terminal.integrated.env.osx": {
+    "UV_PROJECT_ENVIRONMENT": "/Users/sayanadhikary/.venvs/ms_foundry_demo"
+  }
+}
