@@ -75,12 +75,18 @@ def main() -> None:
     result_str = json.dumps(result.as_dict(), indent=2)
     ret_lines = result_str.splitlines()
 
-    if len(ret_lines) > max_display_lines:
-        print("\n".join(ret_lines[:max_display_lines]))
-        print(f"\n {len(ret_lines) - max_display_lines} more lines to be displayed...\n")
-    else:
-        print(result_str)
+    # if len(ret_lines) > max_display_lines:
+    #     print("\n".join(ret_lines[:max_display_lines]))
+    #     print(f"\n {len(ret_lines) - max_display_lines} more lines to be displayed...\n")
+    # else:
+    #     print(result_str)
     # [END output_result]
+
+    # Writing the result to a file
+    output_file = "analysis_result.json"
+    with open(output_file, "w") as f:
+        f.write(result_str)
+    print(f"Analysis result written to {output_file}")
 
 
 if __name__ == "__main__":
